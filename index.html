@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Task Manager</h1>
+        <button id="addTaskBtn">Add Task</button>
+    </header>
+    <main>
+        <ul id="taskList"></ul>
+    </main>
+    <div id="modal-backdrop" class="backdrop"></div>
+    <div id="modal-dialog" class="modal">
+        <h2 id="modal-title">Edit Task</h2> 
+        <input id="edit-title-text" type="text" placeholder="Task Title">
+        <button id="save-button">Save Task</button>
+        <button id="cancel-button">Cancel</button>
+    </div>
+    <footer>
+        <p>Manage your tasks efficiently</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

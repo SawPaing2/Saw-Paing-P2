@@ -1,0 +1,106 @@
+body,
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    color: #333;
+    height: 100%;
+}
+
+header,
+footer {
+    background: #007BFF;
+    color: #FFF;
+    padding: 12px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header button {
+    background: #FF6347;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+ul li {
+    background: white;
+    margin: 5px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    color: #777;
+    background: #EEE;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    z-index: 1001;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.backdrop,
+.modal {
+    display: none;
+    
+}
+
+.visible {
+    display: block;
+    
+}
